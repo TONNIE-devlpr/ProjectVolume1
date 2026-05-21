@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .section{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="home" class="section">Home content gagatagdavvkvf
+        </div>
+        <div id="profile" class="section"> profile contet</div>
+        <div id="setting" class="section"> settings content</div>
+
+        <button onclick="showSection('home')">home</button>
+        <button onclick="showSection('profile')">profile</button>
+
+
+    </body>
+    <script>
+        function showSection(id){
+            const sections=document.querySelectorAll('.section');
+
+            sections.forEach(section=>{
+                section.style.display='none';
+            });
+            document.getElementById(id).style.display='block';
+        }
+    </script>
+</html>

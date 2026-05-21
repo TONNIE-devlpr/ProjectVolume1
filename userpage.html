@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>userpage</title>
+        <style>
+
+        </style>
+        <link rel="stylesheet" href="user.css">
+    </head>
+    <body >
+        <div class="header">
+            <div class="left-header">
+                <image class="image" src="/logos/logo1.png">
+            </div>
+            <div class="right-header">
+                <div class="b">
+                    <a class="logout" href="homepage.html">logout</a>
+                </div>
+                <div class="a">
+                    <button id="profile">Profile</button>
+
+        <div id="profilE" class="sectionD" >
+            <div class="edit">
+                <p>edit profile</p>
+                <img src="/icons/profile.png">
+                
+            </div>
+            <div class="edit ">
+                <p>settings&privacy</p>
+                <img src="/icons/cogwheel.png">
+ 
+            </div>
+            <div class="edit">
+                <p>logout</p>
+                <img src="/icons/logout.png" alt="">
+            </div>
+            <div class="edit">
+                <p>Accessibility</p>
+                <img src="/icons/accessability.png" alt="">
+            </div >
+            <div class="edit">
+                <p>about</p>
+                <img src="/icons/information.png" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="a">
+                    <button onclick="sectionC()">Suggestions</button>
+                </div>
+                <div class="a">
+                    <button >Dashboard</button>
+                </div>
+                <div class="a">
+                    <button onclick="sectionB()">View test history</button>
+                    
+                </div>
+                <div class="a">
+                    <button onclick="sectionA()">Test your health</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="tests" class="sectionA">
+            <div class="form-section">
+                <form action="/submit" method="post">
+                        enter your age:<br>
+                        <input type="number" name="age"><br><br>
+                
+                      select your gender:
+                         <input type="radio" name="gender" value="male" checked>male
+                        <input type="radio" name="gender" value="female" >female<br><br>
+
+                        Are you current smoking? :
+                        <input type="radio" name="status" value="yes" checked>Yes
+                     <input type="radio" name="status" value="no" checked>No<br><br>
+
+                        enter amount of cigarrete per day:<br>
+                    <input type="number" name="amount" value="number" >
+
+                    <input type="submit" name="submit" >
+                </form>
+            </div>
+
+            <div class="image-section">
+                
+            </div>
+
+        </div>
+
+        <div id="histor" class="sectionB">
+            <div class="headB">
+                <h3>Your results</h3>
+            </div>
+            <div class="bodyB">
+                dear customer your health status is bad
+            </div>
+        </div>
+
+
+        <div id="suggestions" class="sectionC">
+            <div class="headC">
+                <h3>Our Suggestions</h3>
+            </div>
+            <div class="bodyC">
+                go hospitaly
+            </div>
+        </div>
+
+
+    </body>
+    <script src="userpage.js"></script>
+</html>
